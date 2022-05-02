@@ -11,7 +11,8 @@ import sys
 import glob
 import subprocess
 from obspy.core import UTCDateTime
-
+#csv 仪器所记载时间内catalog文件所处路径
+#path 提取P波后所存储位置
 def catalogread(csv,path):
     csv_file = csv.reader(open(csv))
     print(csv_file)
@@ -30,7 +31,8 @@ def catalogread(csv,path):
         else:
             os.mkdir(pathmk)
     return seismo
-
+#path1 统一时间文件格式后smartsolo文件所处路径
+#save_path 存储路径
 def Pwaveget(stla,stlo,seismo,path1,save_path,):
     last = ['_E.miniseed','_N.miniseed','_Z.miniseed']
     last1 = ['_E.sac','_N.sac','_Z.sac']
