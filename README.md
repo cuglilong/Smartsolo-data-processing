@@ -1,5 +1,6 @@
 # Smartsolo—DataProcess
 # writter: WanxinLuo from China university of Geosince,Wuhan  
+## you can download the catalog from USGS
 ### Auto_fenlei.py  
 By using this,you can process the raws-smartsolo data.  
 ### Auto_get_P_smartsolo.py    
